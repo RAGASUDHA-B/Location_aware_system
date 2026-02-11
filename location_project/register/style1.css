@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.top-buttons button {
+    padding: 8px 18px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #1f2d3d;
+    color: white;
+    cursor: pointer;
+}
+.container {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    backdrop-filter: blur(6px);
+}
+.left {
+    flex: 1;
+    color: #ff9aa2;
+    padding: 60px;
+}
+
+.left h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.left p {
+    color: #b5ff2e;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.right {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 50px;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form h2 {
+    margin-bottom: 30px;
+}
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+}
+.terms {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form button {
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #9db3c8;
+    cursor: pointer;
+}
