@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Simple HTML Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hello,World!</h1>
+        </header>
+        <main>
+            <p>This is a sample HTML5 Page.</p>
+            <video width="320" height="100" controls>
+                <source src="movie.mp4" type="video/mp4">
+                your browser does not support the video tag.
+            </video>
+            <canvas id="myCanvas" width="100" height="100"></canvas>
+            <script>
+                var canvas=document.getElementById("myCanvas");
+                var ctx=canvas.getContext("2d");
+                ctx.fileSyle="blue";
+                ctx.fillrect(50,50,100,100);
+            </script>
+            <p>progress bar</p>
+            <progress value="70" max="100"></progress>
+        </main>
+        <footer>
+            <p>@raga,student at thiagarajar college of engineering</p>
+        </footer>
+    </body>
+</html>
