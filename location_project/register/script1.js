@@ -1,3 +1,6 @@
+function sho(){
+    document.getElementById("d1").innerHTML=Date();
+}
 document.getElementById("registerForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -10,3 +13,6 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
 
     alert("Registration Successful!");
 });
+function sho(){
+    document.getElementById("d1").innerHTML=Date();
+}

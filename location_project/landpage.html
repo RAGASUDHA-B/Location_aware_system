@@ -230,12 +230,17 @@
                 <li><a href="#contact">Facebook</a></li>
                 <li><a href="#faq">Instagram</a></li>
             </ul>
+            <p id="d1"></p>
+            <button onclick="sho()">show date</button>
         </div>
     </footer>
     <script>
         document.querySelector('.btn').addEventListener('click', function() {
             alert('Thank you.');
         });
+        function sho(){
+    document.getElementById("d1").innerHTML=Date();
+}
     </script>
 </body>
 </html>

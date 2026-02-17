@@ -10,6 +10,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI3_ZAkSR3ncQ-lO3TpdwiN3xO7O7n2Qhe6oG7tYhmJcs0FbU82fXoe8&s'); 
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .main {
     width: 90%;
@@ -78,8 +82,10 @@ button {
 }
 .right-panel {
     flex: 1;
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI3_ZAkSR3ncQ-lO3TpdwiN3xO7O7n2Qhe6oG7tYhmJcs0FbU82fXoe8&s'); 
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .overlay {
     position: absolute;
