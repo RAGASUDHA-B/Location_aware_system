@@ -1,15 +1,62 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Simple HTML Page</title>
+        <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        th,td{
+            padding:20px;
+        }
+        th{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+    </style>
     </head>
     <body>
         <header>
             <h1>Hello,World!</h1>
         </header>
+        <hr>
+        <hr>
         <main>
-            <p>This is a sample HTML5 Page.</p>
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>class</th>
+                    <th>sec</th>
+                </tr>
+                <tr>
+                    <td>raga</td>
+                    <td>5</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>BALU</td>
+                    <td>12</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>HARI</td>
+                    <td>11</td>
+                    <td>C</td>
+                </tr>
+            </table>
+            <p>This is a sample HTML5 Page.</p><!--horizontal line included-->
+            <p>
+             A Computer Science portal for geeks<br>
+             A Computer Science portal for geeks<br>
+             A Computer Science portal for geeks<br>
+             </p>
             <video width="320" height="100" controls>
                 <source src="movie.mp4" type="video/mp4">
                 your browser does not support the video tag.
