@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Application Form</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .container {
+            width: 200px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+        .title {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">Application Form</div>
+
+    <form id="myForm">
+        Email:
+        <input type="email" name="email" required><br><br>
+        Rating (1-10):
+        <input type="number" min="1" max="10" id="num" required><br><br>
+        Gender:
+        <input type="radio" name="gender" checked> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+        <input type="checkbox" required> I Agree
+        <br><br>
+        Progress:
+        <progress value="50" max="100"></progress>
+        <br><br>
+        <button type="button" id="btn" onclick="changeText()">Submit</button>
+    </form>
+    <br>
+    <a href="https://example.com" target="_blank">Visit Example</a>
+    <p id="result"></p>
+</div>
+<script>
+    console.log(new Date());
+    var a = 5;
+    var b = 3;
+    var sum = a + b;
+    console.log("Sum:", sum);
+    var num = 15;
+    if(num > 10) {
+        console.log("Greater");
+    }
+    function changeText() {
+        document.getElementById("btn").innerHTML = "Clicked";
+    }
+    document.getElementById("myForm").addEventListener("submit", function(event){
+        event.preventDefault();
+        document.getElementById("result").innerHTML = "Form submission prevented!";
+    });
+</script>
+</body>
+</html>
