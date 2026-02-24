@@ -10,5 +10,5 @@ LOCATION AWARE SMART PLATFORM
                    gowri
                    gandhi
 
-                 updating our ideas on their own branch and finally we merge out ideas to create a finalize project
+                 updating our ideas on our own branch and finally we merge out ideas to create a finalize project
                  
