@@ -1,0 +1,18 @@
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:#f6f8fa;color:#0b1220}
+.container{max-width:1000px;margin:28px auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+header{grid-column:1/-1}
+.panel{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 14px rgba(11,18,32,0.06)}
+form label{display:block;margin:8px 0}
+input{width:100%;padding:8px;border:1px solid #dfe6ee;border-radius:6px}
+.form-actions{display:flex;gap:8px;margin-top:8px}
+button{padding:8px 12px;border-radius:6px;border:1px solid #0b75ff;background:#0b75ff;color:#fff;cursor:pointer}
+button[type="button"]{background:#f1f5f9;color:#0b1220;border-color:#d1d8e3}
+.list{list-style:none;padding:0;margin:8px 0;border:1px dashed #e6eef6;border-radius:6px;min-height:120px}
+.list li{padding:10px;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center}
+.list li:last-child{border-bottom:0}
+.list li .meta{font-size:13px;color:#40556a}
+.details{margin-top:8px;padding:10px;background:#fbfdff;border-radius:6px;border:1px solid #eef6ff}
+.log{height:150px;overflow:auto;background:#0b1220;color:#bfe0ff;padding:10px;border-radius:6px}
+.hint{display:block;color:#64748b;margin-top:8px}
+@media (max-width:800px){.container{grid-template-columns:1fr;padding:12px}}
