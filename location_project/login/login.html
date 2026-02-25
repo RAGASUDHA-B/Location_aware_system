@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Login Page</title>
     <link rel="stylesheet" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
 </head>
 <body>
 <div class="main">
     <div class="left-panel">
         <div class="triangle"></div>
-        <div class="login-box">
+        <div class="login-box card">
             <h2>Login</h2>
             <label>username</label>
-            <input type="text" placeholder="" />
+            <input id="username" type="text" placeholder="" />
             <label>Password</label>
-            <input type="password" placeholder="" />
+            <input id="password" type="password" placeholder="" />
             <button id="loginBtn">Login</button>
             <p class="signup-text">if you dont have an account, <span>signup</span></p>
         </div>
