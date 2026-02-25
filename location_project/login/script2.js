@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("input").blur(function () {
         if ($(this).val() === "") {
             $(this).css("background-color", "#ff1010");
@@ -7,38 +8,52 @@ $(document).ready(function () {
         }
     });
     $("#loginBtn").click(function () {
-        let username = $("#username").val();
-        let password = $("#password").val();
+        let username = $("#username").val().trim();
+        let password = $("#password").val().trim();
         if (username === "" || password === "") {
             $(".login-box").animate({ left: "-10px" }, 50)
-        .animate({ left: "10px" }, 50)
-        .animate({ left: "-10px" }, 50)
-        .animate({ left: "10px" }, 50)
-        .animate({ left: "0px" }, 50);
-            $("#username").css("background-color", "#ff1010");
-            $("#password").css("background-color", "#ff1010");
+            .animate({ left: "10px" }, 50)
+            .animate({ left: "-10px" }, 50)
+            .animate({ left: "10px" }, 50)
+            .animate({ left: "0px" }, 50);
+            if (username === "") {
+                $("#username").css("background-color", "#ff1010");
+            }
+            if (password === "") {
+                $("#password").css("background-color", "#ff1010");
+            }
             alert("Please enter username and password");
-
-        } else {
-            $(".login-box").fadeTo(300, 0.5).fadeTo(300, 1);
-            //$(".input").css("background-color", "#e4ffba");
-            alert("Login successful!");
+            return; 
         }
-        $ajax({
-            url:"#",
-            type:"POST",
-            data:{
-                username:username,
-                password:password
+        $.ajax({
+            url: "login.php",
+            type: "POST",
+            data: {
+                username: username,
+                password: password
             },
-            success:function(response){
-                if(username==="admin" && password==="password"){
+            success: function (response) {
+
+                if (response.trim() === "success") {
+
+                    $(".login-box").fadeTo(300, 0.5).fadeTo(300, 1);
+
                     alert("Login successful!");
-                }else{
+
+                    setTimeout(function () {
+                        location.reload();
+                    }, 1000);
+
+                } else {
                     alert("Invalid username or password");
                 }
-
+            },
+            error: function (xhr, status, error) {
+                console.log(error);
+                alert("Server error - check Apache or file path");
+            }
         });
+
     });
 
 });
