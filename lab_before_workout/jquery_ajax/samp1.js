@@ -1,5 +1,6 @@
-jQuery.noConflict();
-jQuery(document).ready(function($){
-    $("#btn").click(function(){
-    $('#message').hide(); });
- });
+$(document).ready(function(){
+    $('#btn').bind("click",function(){
+        $("input").blur();
+        $("p").html("this is blur method that is used!!!");
+    });
+});
