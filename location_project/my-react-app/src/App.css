@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 1000%;
+}
+
+.main {
+  width: 400%;
+  height: 1500%;
+  display: flex;
+}
+
+.left-panel {
+  width: 35%;
+  background: #2d2f36;
+  position: relative;
+  padding: 60px 40px;
+  color: white;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 180px solid orange;
+  border-right: 180px solid transparent;
+}
+
+.login-box {
+  margin-top: 120px;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  border-bottom: 2px solid orange;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: #bbb;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #e5e5e5;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 120px;
+  background: #2e5e2e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 15px;
+  color: orange;
+}
+
+.divider {
+  width: 2px;
+  background: #888;
+}
+
+.right-panel {
+  flex: 1;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI3_ZAkSR3ncQ-lO3TpdwiN3xO7O7n2Qhe6oG7tYhmJcs0FbU82fXoe8&s");
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  color: #f8b3a5;
+  padding: 80px;
+}
+
+.overlay h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.overlay p {
+  font-size: 20px;
+  line-height: 1.6;
+}
