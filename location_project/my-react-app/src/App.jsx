@@ -11,8 +11,6 @@ function App() {
       setMessage("Please enter username and password");
       return;
     }
-
-    // Simulating PHP backend check
     if (username === "admin" && password === "1234") {
       setMessage("Login successful!");
     } else {
@@ -27,29 +25,23 @@ function App() {
 
         <div className="login-box">
           <h2>Login</h2>
-
           <label>Username</label>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-
           <label>Password</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-
           <button onClick={handleLogin}>Login</button>
-
           {message && <p className="message">{message}</p>}
         </div>
       </div>
-
       <div className="divider"></div>
-
       <div className="right-panel">
         <div className="overlay">
           <h1>Welcome page</h1>

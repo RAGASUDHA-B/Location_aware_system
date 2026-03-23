@@ -48,14 +48,14 @@ label {
   display: block;
   margin-top: 20px;
   margin-bottom: 6px;
-  color: #bbb;
+  color: #020101;
 }
 
 input {
   width: 100%;
   padding: 8px;
   border: none;
-  background: #e5e5e5;
+  background: #575555;
 }
 
 button {
