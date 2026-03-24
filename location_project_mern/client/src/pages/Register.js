@@ -11,7 +11,7 @@ export default function Register() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://psychic-bassoon-5gxx5grr76p9fvwpw-3000.app.github.dev/api/users/register",
         data
       );
 
