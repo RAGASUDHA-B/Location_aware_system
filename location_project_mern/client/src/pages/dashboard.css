@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+}
+
+.map {
+  width: 60%;
+}
+
+.panel {
+  width: 20%;
+  padding: 20px;
+}

@@ -1,0 +1,19 @@
+.home {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1");
+  background-size: cover;
+}
+
+.hero {
+  text-align: center;
+  width: 400px;
+  margin: 150px auto;
+  padding: 40px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background: #d8b4fe;
+  border: none;
+}

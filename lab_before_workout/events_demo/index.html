@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events & Objects Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Events & Objects — Demo</h1>
+      <p>Demonstrates DOM events, event delegation, custom events, and JS objects.</p>
+    </header>
+
+    <section class="panel">
+      <form id="deviceForm">
+        <h2>Add Device</h2>
+        <label>Device name
+          <input id="deviceName" required minlength="1" placeholder="e.g. Tracker01">
+        </label>
+        <label>Latitude
+          <input id="deviceLat" type="number" step="any" required placeholder="12.9716">
+        </label>
+        <label>Longitude
+          <input id="deviceLng" type="number" step="any" required placeholder="77.5946">
+        </label>
+        <label>User Email
+          <input id="userEmail" type="email" placeholder="user@gmail.com">
+        </label>
+        <label>Password
+          <input id="userPassword" type="password" placeholder="6 digit password">
+        </label>
+        <div class="form-actions">
+          <button id="addBtn">Add Device</button>
+          <button id="clearBtn" type="button">Clear</button>
+        </div>
+        <small class="hint">Password must be exactly 6 digits; email local-part &gt;3 chars.</small>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Devices</h2>
+      <ul id="deviceList" class="list"></ul>
+      <div id="details" class="details">Select a device to see details.</div>
+    </section>
+
+    <section class="panel">
+      <h2>Console</h2>
+      <pre id="appLog" class="log"></pre>
+    </section>
+
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

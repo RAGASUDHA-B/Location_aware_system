@@ -1,0 +1,19 @@
+.register {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 40px;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
